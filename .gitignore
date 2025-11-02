@@ -1,0 +1,216 @@
+# ===============================================================
+# PYTHON / FASTAPI BACKEND
+# ===============================================================
+
+# Bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Build artifacts and packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+wheels/
+*.egg
+MANIFEST
+
+# Logs
+logs/
+*.log
+app.log
+error.log
+access.log
+
+# Databases
+data/
+*.db
+*.sqlite
+*.sqlite3
+database.db
+dev.db
+test.db
+local.db
+db.sqlite3
+db.sqlite3-journal
+
+# Alembic migrations (keep the folder but ignore versions)
+alembic/versions/*
+!alembic/versions/.gitkeep
+
+# Coverage and test artifacts
+coverage.*
+htmlcov/
+.coverage
+.coverage.*
+.cache/
+.pytest_cache/
+.nox/
+.tox/
+
+# Type checking and linting caches
+.mypy_cache/
+.dmypy.json
+.pyre/
+.pytype/
+cython_debug/
+
+# Local settings and configs
+config.ini
+secrets.json
+.secrets
+.local/
+local/
+
+# Celery / Redis
+celerybeat-schedule*
+dump.rdb
+
+# Temporary files
+tmp/
+temp/
+processing/
+temp_processing/
+*.tmp
+*.bak
+*.backup
+*.old
+
+# Cache
+.cache/
+cache/
+
+# ===============================================================
+# FLUTTER WEB FRONTEND (BUILT SPA)
+# ===============================================================
+
+# Flutter build outputs
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.dart_tool/
+.flutter-plugins-dependencies
+
+# Web build artifacts
+flutter_web_build/
+web_build/
+frontend_build/
+frontend/dist/
+frontend/build/
+flutter_web_release/
+build/web/
+
+# Node/npm dependencies (for future frontend tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Flutter/Dart environment
+.pub/
+.dart_tool/
+.flutter-plugins
+flutter_export_environment.sh
+
+# ===============================================================
+# MEDIA / USER FILES
+# ===============================================================
+
+media/
+uploads/
+user_media/
+entry_media/
+thumbnails/
+generated/
+public/uploads/
+static/uploads/
+
+# Backups / exports / imports
+backups/
+exports/
+imports/
+*.export
+*.import
+
+# Test / fixture data
+test_data/
+fixtures/
+
+# ===============================================================
+# DOCS / BUILD / PROJECT FILES
+# ===============================================================
+
+# Documentation builds
+docs/_build/
+docs/build/
+
+# Site generator outputs
+/site
+
+# ===============================================================
+# DOCKER / DEPLOYMENT
+# ===============================================================
+docker-compose.override.yml
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Ignore local sqlite if mounted in volume
+/data/
+
+# ===============================================================
+# IDE / OS / EDITOR
+# ===============================================================
+
+# VS Code / JetBrains
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Swap / temp files
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ===============================================================
+# JUPYTER / NOTEBOOKS
+# ===============================================================
+
+.ipynb_checkpoints/
+
+# ===============================================================
+# END OF FILE
+# ===============================================================

@@ -1,0 +1,43 @@
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+
+# Database
+sqlmodel==0.0.14
+sqlalchemy==2.0.23
+alembic==1.12.1
+psycopg2-binary==2.9.9
+
+# Authentication
+python-jose[cryptography]==3.3.0
+passlib[argon2]==1.7.4
+argon2-cffi==25.1.0
+python-multipart==0.0.6
+
+# Configuration
+pydantic-settings==2.0.3
+python-dotenv==1.0.0
+
+
+# Rate Limiting
+slowapi==0.1.9
+
+
+# Media Processing
+Pillow==10.1.0
+python-magic==0.4.27
+aiofiles==23.2.1
+ffmpeg-python==0.2.0
+
+# HTTP Client
+httpx==0.24.1
+
+# Logging - using standard Python logging
+
+# Validation
+email-validator==2.1.0
+
+# Utilities
+python-dateutil==2.8.2
+psutil==5.9.6

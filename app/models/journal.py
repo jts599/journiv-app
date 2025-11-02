@@ -1,0 +1,91 @@
+"""
+Journal-related models.
+"""
+import uuid
+from datetime import datetime
+from typing import List, Optional, TYPE_CHECKING
+
+from pydantic import field_validator
+from sqlalchemy import Column, ForeignKey, Enum as SAEnum
+from sqlmodel import Field, Relationship, Index, CheckConstraint
+
+from .base import BaseModel
+from .enums import JournalColor
+
+if TYPE_CHECKING:
+    from .user import User
+    from .entry import Entry
+
+
+class Journal(BaseModel, table=True):
+    """
+    Journal model with enhanced features for better organization.
+    """
+    __tablename__ = "journal"
+
+    title: str = Field(..., min_length=1, max_length=200)
+    description: Optional[str] = Field(None, max_length=1000)
+    color: Optional[JournalColor] = Field(
+        default=None,
+        sa_column=Column(
+            SAEnum(JournalColor, name="journal_color_enum"),
+            nullable=True
+        )
+    )
+    icon: Optional[str] = Field(None, max_length=50)
+    user_id: uuid.UUID = Field(
+        sa_column=Column(
+            ForeignKey("user.id", ondelete="CASCADE"),
+            nullable=False
+        )
+    )
+    is_favorite: bool = Field(default=False)
+    is_archived: bool = Field(default=False)
+    entry_count: int = Field(default=0, ge=0)  # Denormalized for performance
+    last_entry_at: Optional[datetime] = None
+
+    # Relations
+    user: "User" = Relationship(back_populates="journals")
+    entries: List["Entry"] = Relationship(
+        back_populates="journal",
+        sa_relationship_kwargs={"cascade": "all, delete-orphan"}
+    )
+
+    # Table constraints and indexes
+    __table_args__ = (
+        # Composite indexes for common query patterns.
+        Index('idx_journal_user_created', 'user_id', 'created_at'),
+        Index('idx_journal_user_favorite', 'user_id', 'is_favorite'),
+        Index('idx_journal_user_archived', 'user_id', 'is_archived'),
+        # Constraints
+        CheckConstraint('length(title) > 0', name='check_title_not_empty'),
+        CheckConstraint('entry_count >= 0', name='check_entry_count_positive'),
+    )
+
+    @field_validator('title')
+    @classmethod
+    def validate_title(cls, v):
+        if not v or len(v.strip()) == 0:
+            raise ValueError('Title cannot be empty')
+        return v.strip()
+
+    @field_validator('description')
+    @classmethod
+    def validate_description(cls, v):
+        if v and len(v.strip()) == 0:
+            return None
+        return v.strip() if v else v
+
+    @field_validator('color')
+    @classmethod
+    def validate_color(cls, v):
+        if v is None:
+            return v
+        if isinstance(v, JournalColor):
+            return v
+        value = v.strip().upper()
+        try:
+            return JournalColor(value)
+        except ValueError as exc:
+            allowed = ", ".join(color.value for color in JournalColor)
+            raise ValueError(f"Color must be one of predefined palette values: {allowed}") from exc

@@ -1,0 +1,13 @@
+# Include base requirements
+-r base.txt
+
+# Include test requirements
+-r test.txt
+
+# Development Tools (optional - uncomment if needed)
+# black==23.11.0
+# isort==5.12.0
+# flake8==6.1.0
+# mypy==1.7.1
+# pre-commit==3.5.0
+# watchfiles==0.21.0

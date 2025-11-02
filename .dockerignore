@@ -1,0 +1,159 @@
+# ===============================================================
+# PYTHON / FASTAPI BACKEND
+# ===============================================================
+
+# Bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Test / coverage artifacts
+.coverage
+.coverage.*
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+.cache/
+.mypy_cache/
+.pytype/
+.pyre/
+cython_debug/
+
+# Logs
+logs/
+*.log
+app.log
+error.log
+access.log
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+data/
+db.sqlite3
+db.sqlite3-journal
+
+# Alembic
+alembic/versions/__pycache__/
+
+# ===============================================================
+# FLUTTER WEB FRONTEND
+# ===============================================================
+
+# Flutter build caches
+.dart_tool/
+.packages
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-versions
+.flutter_export_environment.sh
+.pub/
+
+# Ignore intermediate build artifacts
+build/
+
+# We DO NOT ignore web/ for flutter web app build output
+
+# For future extra Flutter project structure, ignore others:
+android/
+ios/
+linux/
+macos/
+windows/
+test/
+coverage/
+integration_test/
+
+# ===============================================================
+# MEDIA / USER FILES
+# ===============================================================
+
+media/
+uploads/
+user_media/
+entry_media/
+thumbnails/
+generated/
+backups/
+exports/
+imports/
+
+# ===============================================================
+# CONFIG / ENVIRONMENT / SECRETS
+# ===============================================================
+
+.env*
+config.ini
+secrets.json
+.secrets
+.local/
+local/
+.envrc
+
+# ===============================================================
+# DEV / EDITOR / GIT / SYSTEM FILES
+# ===============================================================
+
+# Git
+.git/
+.gitignore
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Swap / temp files
+*.swp
+*.swo
+*~
+
+# macOS / Windows / Linux junk
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.directory
+.fuse_hidden*
+.Trash-*
+.nfs*
+
+# ===============================================================
+# DOCKER / CI / DOCS / MISC
+# ===============================================================
+
+# Docker / Compose
+Dockerfile*
+*.dockerignore
+docker-compose.override.yml
+docker-compose.dev.yml
+
+# Scripts (exclude Python and shell scripts, but keep entrypoint and JSON data)
+scripts/__pycache__/
+scripts/*.py
+scripts/*.sh
+# Exception: Include docker entrypoint script
+!scripts/docker-entrypoint.sh
+
+# Docs / site builds
+docs/_build/
+docs/build/
+site/
+
+# AI notes / misc
+CLAUDE.md
+GEMINI.md

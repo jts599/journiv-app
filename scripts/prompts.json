@@ -1,0 +1,733 @@
+[
+  {
+    "text": "List three things you’re grateful for today and why.",
+    "category": "gratitude",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "Describe someone who made your day recently.",
+    "category": "gratitude",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "Write about a small act of kindness you witnessed.",
+    "category": "gratitude",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "Recall a challenge that turned into a blessing.",
+    "category": "gratitude",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "What everyday comfort do you take for granted?",
+    "category": "gratitude",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Write a thank-you letter to your future self.",
+    "category": "gratitude",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "What skill or ability are you most grateful for having?",
+    "category": "gratitude",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Describe a moment when gratitude changed your perspective.",
+    "category": "gratitude",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "List five people you’re grateful for and what they’ve taught you.",
+    "category": "gratitude",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "How has gratitude influenced your mood recently?",
+    "category": "gratitude",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+
+  {
+    "text": "Write about a lesson you learned the hard way.",
+    "category": "reflection",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "What does success mean to you right now?",
+    "category": "reflection",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "Describe a turning point in your life.",
+    "category": "reflection",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 20
+  },
+  {
+    "text": "When did you last change your opinion about something important?",
+    "category": "reflection",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "What habits define you today compared to five years ago?",
+    "category": "reflection",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "What emotion do you avoid reflecting on, and why?",
+    "category": "reflection",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 20
+  },
+  {
+    "text": "How do you react when plans don’t go your way?",
+    "category": "reflection",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "What recent mistake taught you something valuable?",
+    "category": "reflection",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Describe how you’ve grown over the past year.",
+    "category": "reflection",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "How do you measure personal growth?",
+    "category": "reflection",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 20
+  },
+
+  {
+    "text": "What goal are you currently most excited about?",
+    "category": "goals",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Describe your dream project or ambition.",
+    "category": "goals",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "What’s holding you back from your next milestone?",
+    "category": "goals",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "List three small goals that could improve your week.",
+    "category": "goals",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "Write about a goal you achieved and how it felt.",
+    "category": "goals",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "If you had unlimited time, what would you pursue?",
+    "category": "goals",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "Describe how you plan and track your goals.",
+    "category": "goals",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "How have your priorities changed in the last few years?",
+    "category": "goals",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "What motivates you when progress feels slow?",
+    "category": "goals",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Imagine your life five years from now — what’s different?",
+    "category": "goals",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 20
+  },
+
+  {
+    "text": "Describe a time when you felt completely creative.",
+    "category": "creativity",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "If you could design anything, what would it be?",
+    "category": "creativity",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Write a short poem about today.",
+    "category": "creativity",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Describe your ideal creative workspace.",
+    "category": "creativity",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "What inspires you the most when you feel stuck?",
+    "category": "creativity",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Invent a new holiday and explain how it’s celebrated.",
+    "category": "creativity",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 20
+  },
+  {
+    "text": "If you could collaborate with any artist, who and why?",
+    "category": "creativity",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "How does creativity show up in your daily life?",
+    "category": "creativity",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "What childhood activity sparked your imagination?",
+    "category": "creativity",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Describe a problem you solved creatively.",
+    "category": "creativity",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+
+  {
+    "text": "Who do you feel most connected to right now?",
+    "category": "relationships",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Write a letter to someone you miss.",
+    "category": "relationships",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "What does healthy communication mean to you?",
+    "category": "relationships",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "Describe a moment when someone truly understood you.",
+    "category": "relationships",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Who has shaped your worldview the most?",
+    "category": "relationships",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "Write about how you support others emotionally.",
+    "category": "relationships",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "What boundary has improved your relationships?",
+    "category": "relationships",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "Describe a meaningful conversation you’ve had recently.",
+    "category": "relationships",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "How do you show appreciation to others?",
+    "category": "relationships",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "What does friendship mean to you today?",
+    "category": "relationships",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+
+  {
+    "text": "What helps you stay present in daily life?",
+    "category": "mindfulness",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Describe the sights and sounds around you right now.",
+    "category": "mindfulness",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "When do you feel most at peace?",
+    "category": "mindfulness",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Write about how you handle distractions.",
+    "category": "mindfulness",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "What does mindfulness mean to you personally?",
+    "category": "mindfulness",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "How do you calm your mind during stress?",
+    "category": "mindfulness",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Describe your ideal peaceful moment.",
+    "category": "mindfulness",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "What daily routine helps you reconnect with yourself?",
+    "category": "mindfulness",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "How can you be more mindful with technology use?",
+    "category": "mindfulness",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "Reflect on a time you slowed down and noticed something beautiful.",
+    "category": "mindfulness",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+
+  {
+    "text": "How are you feeling right now, in one sentence?",
+    "category": "emotions",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "Describe a time you felt truly proud.",
+    "category": "emotions",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Write about an emotion you find hard to express.",
+    "category": "emotions",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 20
+  },
+  {
+    "text": "What emotion do you feel most often these days?",
+    "category": "emotions",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "How do you comfort yourself when upset?",
+    "category": "emotions",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Write about a time your emotions taught you something important.",
+    "category": "emotions",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "What triggers joy for you?",
+    "category": "emotions",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "How do you respond when angry?",
+    "category": "emotions",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Describe a memory tied to strong emotion.",
+    "category": "emotions",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "How do you express empathy toward others?",
+    "category": "emotions",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+
+  {
+    "text": "What dream do you still remember vividly?",
+    "category": "dreams",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "If you could interpret a recent dream, what might it mean?",
+    "category": "dreams",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "Describe your ideal life if everything went right.",
+    "category": "dreams",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 20
+  },
+  {
+    "text": "Write about a childhood dream that changed over time.",
+    "category": "dreams",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "What recurring dream themes have you noticed?",
+    "category": "dreams",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "Imagine your perfect day ten years from now.",
+    "category": "dreams",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "What dream goal excites you the most today?",
+    "category": "dreams",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Describe how your dreams influence your choices.",
+    "category": "dreams",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "If you could live in any imaginary world, what would it be like?",
+    "category": "dreams",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 20
+  },
+  {
+    "text": "What’s a dream you’ve let go of—and why?",
+    "category": "dreams",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 15
+  },
+
+  {
+    "text": "Recall a memory that makes you smile instantly.",
+    "category": "memories",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Write about your earliest clear memory.",
+    "category": "memories",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "Describe a place that feels nostalgic to you.",
+    "category": "memories",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Who were you closest to in childhood?",
+    "category": "memories",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "What event changed your outlook on life?",
+    "category": "memories",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 20
+  },
+  {
+    "text": "Describe your favorite holiday memory.",
+    "category": "memories",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "What smells or sounds bring back strong memories?",
+    "category": "memories",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Write about a memory you’d like to relive.",
+    "category": "memories",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "How have your memories shaped your identity?",
+    "category": "memories",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 20
+  },
+  {
+    "text": "Which moment would you capture forever if you could?",
+    "category": "memories",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 15
+  },
+
+  {
+    "text": "What’s your favorite way to take care of yourself?",
+    "category": "self_care",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "How do you recharge after a stressful day?",
+    "category": "self_care",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Write a self-care plan for the weekend.",
+    "category": "self_care",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Describe what rest truly means to you.",
+    "category": "self_care",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "What boundaries protect your mental health?",
+    "category": "self_care",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "When did you last do something kind for yourself?",
+    "category": "self_care",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "List five simple activities that calm you.",
+    "category": "self_care",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "How does your body tell you it needs rest?",
+    "category": "self_care",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Write about how you practice forgiveness toward yourself.",
+    "category": "self_care",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 20
+  },
+  {
+    "text": "What does balance look like in your life?",
+    "category": "self_care",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 15
+  },
+
+  {
+    "text": "Describe your ideal productive day.",
+    "category": "productivity",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "What helps you focus when you’re distracted?",
+    "category": "productivity",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "Write about your top productivity hacks.",
+    "category": "productivity",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "How do you prioritize what matters most?",
+    "category": "productivity",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "What does rest have to do with being productive?",
+    "category": "productivity",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "Describe a task you’ve been procrastinating on and why.",
+    "category": "productivity",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "How do you celebrate progress, not perfection?",
+    "category": "productivity",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "What time of day are you most effective, and why?",
+    "category": "productivity",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "Write about your ideal work environment.",
+    "category": "productivity",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "What’s your strategy when motivation dips?",
+    "category": "productivity",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+
+  {
+    "text": "Write anything that’s on your mind right now.",
+    "category": "general",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "Describe a place that makes you feel at home.",
+    "category": "general",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "What is something new you learned this week?",
+    "category": "general",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 5
+  },
+  {
+    "text": "If you could relive any day, which one would it be?",
+    "category": "general",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Describe a world where money does not exist. How do people measure success?",
+    "category": "general",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 20
+  },
+  {
+    "text": "What question would you ask your future self?",
+    "category": "general",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Write about what inspires you to keep going.",
+    "category": "general",
+    "difficulty_level": 1,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "Describe how you define happiness.",
+    "category": "general",
+    "difficulty_level": 2,
+    "estimated_time_minutes": 10
+  },
+  {
+    "text": "If today were your last day, what would you do?",
+    "category": "general",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 15
+  },
+  {
+    "text": "What makes life meaningful to you?",
+    "category": "general",
+    "difficulty_level": 3,
+    "estimated_time_minutes": 15
+  }
+]

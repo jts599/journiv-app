@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Happy",
+    "icon": "😊",
+    "category": "positive"
+  },
+  {
+    "name": "Excited",
+    "icon": "🤩",
+    "category": "positive"
+  },
+  {
+    "name": "Grateful",
+    "icon": "🙏",
+    "category": "positive"
+  },
+  {
+    "name": "Calm",
+    "icon": "😌",
+    "category": "positive"
+  },
+  {
+    "name": "Focused",
+    "icon": "🎯",
+    "category": "positive"
+  },
+  {
+    "name": "Sad",
+    "icon": "😢",
+    "category": "negative"
+  },
+  {
+    "name": "Angry",
+    "icon": "😠",
+    "category": "negative"
+  },
+  {
+    "name": "Stressed",
+    "icon": "😫",
+    "category": "negative"
+  },
+  {
+    "name": "Lonely",
+    "icon": "😔",
+    "category": "negative"
+  },
+  {
+    "name": "Tired",
+    "icon": "😴",
+    "category": "negative"
+  },
+  {
+    "name": "Neutral",
+    "icon": "😐",
+    "category": "neutral"
+  },
+  {
+    "name": "Confused",
+    "icon": "😕",
+    "category": "neutral"
+  },
+  {
+    "name": "Curious",
+    "icon": "🤔",
+    "category": "neutral"
+  },
+  {
+    "name": "Surprised",
+    "icon": "😮",
+    "category": "neutral"
+  },
+  {
+    "name": "Anxious",
+    "icon": "😰",
+    "category": "negative"
+  },
+  {
+    "name": "Proud",
+    "icon": "😤",
+    "category": "positive"
+  },
+  {
+    "name": "Hopeful",
+    "icon": "🌟",
+    "category": "positive"
+  },
+  {
+    "name": "Disappointed",
+    "icon": "😞",
+    "category": "negative"
+  },
+  {
+    "name": "Relaxed",
+    "icon": "😌",
+    "category": "positive"
+  },
+  {
+    "name": "Motivated",
+    "icon": "💪",
+    "category": "positive"
+  }
+]
