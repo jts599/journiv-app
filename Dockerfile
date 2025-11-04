@@ -20,6 +20,7 @@ RUN apk add --no-cache --virtual .build-deps \
   curl \
   ffmpeg \
   build-base \
+  git \
   && echo "🔍 Checking FFmpeg license (builder stage)..." \
   && ffmpeg -version | grep -E "enable-gpl|enable-nonfree" && (echo "❌ GPL/nonfree FFmpeg detected!" && exit 1) || echo "✅ LGPL FFmpeg build verified."
 
@@ -50,6 +51,9 @@ RUN apk add --no-cache \
   libffi \
   postgresql-libs \
   libpq \
+  git \
+  github-cli \
+  bash \
   && echo "🔍 Checking FFmpeg license (runtime stage)..." \
   && ffmpeg -version | grep -E "enable-gpl|enable-nonfree" && (echo "❌ GPL/nonfree FFmpeg detected!" && exit 1) || echo "✅ LGPL FFmpeg build verified."
 
