@@ -11,51 +11,18 @@
 # - Lower resource requirements
 # - Migrations run in worker (SKIP_DB_INIT=false) since using single Uvicorn process
 # - CORS enabled by default to support local Flutter/Web clients
+#
+# Environment variables are loaded from .env.dev
 
 services:
   # Main application service (SQLite by default)
   app:
     build: .
     container_name: journiv-dev-sqlite
+    env_file:
+      - .env.dev
     ports:
       - "${APP_PORT:-8000}:${APP_PORT:-8000}"
-    environment:
-      # Enable migrations and seeding in worker (single Uvicorn process in dev mode)
-      - SKIP_DB_INIT=false
-      - SKIP_DATA_SEEDING=false
-      # Default to SQLite
-      - DATABASE_URL=sqlite:////data/journiv.db
-      # PostgreSQL override (optional)
-      - POSTGRES_URL=${POSTGRES_URL:-}
-      - POSTGRES_HOST=${POSTGRES_HOST:-}
-      - POSTGRES_USER=${POSTGRES_USER:-}
-      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-}
-      - POSTGRES_DB=${POSTGRES_DB:-}
-      - POSTGRES_PORT=${POSTGRES_PORT:-5432}
-      # Application settings
-      - APP_NAME=${APP_NAME:-Journiv}
-      - APP_VERSION=${APP_VERSION:-0.1.0-beta.1}
-      - DEBUG=true
-      - ENVIRONMENT=development
-      - DOMAIN_NAME=${DOMAIN_NAME:-localhost}
-      - ENABLE_CORS=${ENABLE_CORS:-true}
-      - CORS_ORIGINS=${CORS_ORIGINS:-http://localhost:3000,http://localhost:8080}
-      - API_V1_PREFIX=${API_V1_PREFIX:-/api/v1}
-      - ALGORITHM=${ALGORITHM:-HS256}
-      - ACCESS_TOKEN_EXPIRE_MINUTES=${ACCESS_TOKEN_EXPIRE_MINUTES:-15}
-      - REFRESH_TOKEN_EXPIRE_DAYS=${REFRESH_TOKEN_EXPIRE_DAYS:-7}
-      # CSP Configuration (Development - more permissive)
-      - ENABLE_CSP=${ENABLE_CSP:-true}
-      - ENABLE_HSTS=${ENABLE_HSTS:-false}
-      - ENABLE_CSP_REPORTING=${ENABLE_CSP_REPORTING:-true}
-      - CSP_REPORT_URI=${CSP_REPORT_URI:-/api/v1/security/csp-report}
-      - LOG_LEVEL=${LOG_LEVEL:-INFO}
-      - LOG_FILE=${LOG_FILE:-}
-      - MEDIA_ROOT=/data/media
-      - LOG_DIR=/data/logs
-      - MAX_FILE_SIZE_MB=500
-      - ALLOWED_MEDIA_TYPES=image/jpeg,image/png,image/gif,image/webp,video/mp4,video/avi,video/mov,video/webm,audio/mpeg,audio/wav,audio/ogg,audio/m4a,audio/aac
-      - ALLOWED_FILE_EXTENSIONS=.jpg,.jpeg,.png,.gif,.webp,.mp4,.avi,.mov,.webm,.mp3,.wav,.ogg,.m4a,.aac
     volumes:
       - .:/app
       - ./data:/data

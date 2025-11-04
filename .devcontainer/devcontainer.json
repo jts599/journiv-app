@@ -1,15 +1,23 @@
 {
   "$schema": "https://raw.githubusercontent.com/devcontainers/spec/main/schemas/devContainer.schema.json",
   "name": "Journiv Development",
-  "dockerComposeFile": "../docker-compose.dev.yml",
-  "service": "app",
+  "build": {
+    "dockerfile": "../Dockerfile",
+    "context": ".."
+  },
   "workspaceFolder": "/app",
+  
+  // Use shared development environment file
+  "runArgs": ["--env-file", "${localWorkspaceFolder}/.env.dev"],
   
   // Configure what happens when the container is created
   "onCreateCommand": "pip install --no-cache-dir -r requirements/dev.txt",
   
   // Post-start command to ensure directories exist
   "postStartCommand": "mkdir -p /data/media /data/logs",
+  
+  // Override the default CMD to not start the server automatically
+  "overrideCommand": true,
   
   // VS Code customizations
   "customizations": {
@@ -122,15 +130,15 @@
   // Container user
   "remoteUser": "appuser",
   
-  // Container environment variables
-  "containerEnv": {
-    "PYTHONPATH": "/app",
-    "ENVIRONMENT": "development",
-    "DEBUG": "true"
-  },
+  // Minimal container env (most come from .env.dev)
+  "containerEnv": {},
   
-  // Mount the Docker socket for Docker-in-Docker support (optional)
+  // Mount the Docker socket and data directory
   "mounts": [
-    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
-  ]
+    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
+    "source=${localWorkspaceFolder}/data,target=/data,type=bind"
+  ],
+  
+  // Explicitly disable features
+  "features": {}
 }
