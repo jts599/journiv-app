@@ -3,15 +3,16 @@
   "name": "Journiv Development",
   "build": {
     "dockerfile": "../Dockerfile",
-    "context": ".."
+    "context": "..",
+    "target": "dev"
   },
   "workspaceFolder": "/app",
 
   // Use shared development environment file
   "runArgs": ["--env-file", "${localWorkspaceFolder}/.env.dev"],
 
-  // Post-start command to ensure directories exist and setup shell
-  "postStartCommand": "mkdir -p /data/media /data/logs && (command -v starship >/dev/null 2>&1 || (curl -sS https://starship.rs/install.sh | sh -s -- -y && echo 'eval \"$(starship init bash)\"' >> ~/.bashrc))",
+  // Post-start command to ensure directories exist, install git-lfs, and setup shell
+  "postStartCommand": "sudo apk add --no-cache git-lfs && git lfs install && mkdir -p /data/media /data/logs && (command -v starship >/dev/null 2>&1 || (curl -sS https://starship.rs/install.sh | sh -s -- -y && echo 'eval \"$(starship init bash)\"' >> ~/.bashrc))",
 
   // Override the default CMD to not start the server automatically
   "overrideCommand": true,
@@ -139,6 +140,6 @@
     "source=${localWorkspaceFolder}/data,target=/data,type=bind"
   ],
 
-  // Explicitly disable features
+  // No additional features needed (git-lfs installed via postStartCommand)
   "features": {}
 }

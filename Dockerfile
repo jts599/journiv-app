@@ -92,3 +92,19 @@ HEALTHCHECK --interval=30s --timeout=30s --start-period=5s --retries=3 \
   CMD curl -f http://localhost:8000/api/v1/health || exit 1
 
 CMD ["/app/scripts/docker-entrypoint.sh"]
+
+# =========================
+# Stage 3: Development
+# =========================
+FROM runtime AS dev
+
+# Switch back to root to install sudo and configure permissions
+USER root
+
+# Install sudo and give appuser permission to use apk for package management
+# particularly needed for git-lfs installation
+RUN apk add --no-cache sudo \
+  && echo "appuser ALL=(ALL) NOPASSWD: /sbin/apk" >> /etc/sudoers
+
+# Switch back to appuser for development work
+USER appuser
